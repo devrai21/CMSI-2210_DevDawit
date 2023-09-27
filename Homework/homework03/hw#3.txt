@@ -1,123 +1,86 @@
-1. Hex FAC3 in binary:
+1. Hex FAC3 in binary:: 1111101011000011
 
-F = 1111
-A = 1010
-C = 1100
-3 = 0011
-So, Hex FAC3 in binary is: 1111101011000011
+2. Hex FAC3 as an unsigned decimal: 64195
 
-2. Hex FAC3 as an unsigned decimal:
-To convert from hex to decimal, you can use the following formula:
-Decimal = (F * 16^3) + (A * 16^2) + (C * 16^1) + (3 * 16^0)
-Decimal = (15 * 4096) + (10 * 256) + (12 * 16) + (3 * 1)
-Decimal = 61440 + 2560 + 192 + 3
-Decimal = 63895
-So, Hex FAC3 as an unsigned decimal is: 63895
+3. Hex FAC3 as a signed decimal: -1341
 
-3. Hex FAC3 as a signed decimal:
-First, convert FAC3 to its 16-bit binary form: 1111101011000011.
-In two's complement, the most significant bit (leftmost) is the sign bit. If it's 1, the number is negative.
-The sign bit is 1, so it's a negative number.
-Invert all bits: 0000010100111100
-Add 1 to the inverted value: 0000010100111101
-Decimal = -(2^15) + (2^2) + (2^1) + (2^0)
-Decimal = -32768 + 4 + 2 + 1
-Decimal = -32761
+4. Hex 0064 in binary: 100
 
-So, Hex FAC3 as a signed decimal is: -32761
+5. Hex 0064 as an unsigned decimal: 100
 
-4. Hex 0064 in binary:
+6. Hex 0064 as a signed decimal: 55172
 
-0 = 0000
-6 = 0110
-4 = 0100
-So, Hex 0064 in binary is: 000001100100
+7. Hex 8000 in binary: 1000 0000 0000 0000
 
-5. Hex 0064 as an unsigned decimal:
-To convert from hex to decimal, you can use the following formula:
-Decimal = (0 * 16^2) + (0 * 16^1) + (6 * 16^0)
-Decimal = 0 + 0 + 6
-Decimal = 6
+8. Hex 8000 as an unsigned decimal: 32768
 
-So, Hex 0064 as an unsigned decimal is: 6
+9. Hex 8000 as a signed decimal: -32768
 
-6. Hex 0064 as a signed decimal:
-Treat 0064 as a signed 16-bit number, it remains positive:
-Decimal = (0 * 2^15) + (0 * 2^14) + (6 * 2^13) + (4 * 2^12) + (0 * 2^11) + (0 * 2^10) + (0 * 2^9) + (0 * 2^8) + (0 * 2^7) + (0 * 2^6) + (0 * 2^5) + (0 * 2^4) + (0 * 2^3) + (0 * 2^2) + (0 * 2^1) + (0 * 2^0)
-Decimal = 0 + 0 + 49152 + 4096 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0 + 0
-Decimal = 53248
+10. Decimal 8000 encoded in 16-bits (unsigned) is in hex: 0x1F40
 
-So, Hex 0064 as a signed decimal is: 53248
+11. Decimal 8000 encoded in 16-bits (signed) is in hex: 0x1F40
 
-7. Hex 8000 in binary:
+12. Decimal -11 encoded in 16-bits (signed) is in hex: FFF5
 
-8 = 1000
-0 = 0000
-0 = 0000
-0 = 0000
-So, Hex 8000 in binary is: 1000000000000000
+13. Decimal -32717 encoded in 16-bits (signed) is in hex: 8033
 
-8. Hex 8000 as an unsigned decimal:
-To convert from hex to decimal, you can use the following formula:
-Decimal = (8 * 16^3) + (0 * 16^2) + (0 * 16^1) + (0 * 16^0)
-Decimal = (8 * 4096) + (0 * 256) + (0 * 16) + (0 * 1)
-Decimal = 32768 + 0 + 0 + 0
-Decimal = 32768
+14. Binary 10111101 in hex is: BD
 
-9. So, Hex 8000 as an unsigned decimal is: 32768
+15. Binary 1011110100000001 as a unsigned decimal is: 48385
 
-Hex 8000 as a signed decimal:
-If we treat 8000 as a signed 16-bit number, it's a negative number in two's complement form.
-First, convert 8000 to its 16-bit binary form: 1000000000000000.
-The sign bit is 1, so it's a negative number.
-Invert all bits: 0111111111111111
-Add 1 to the inverted value: 1000000000000000
-Decimal = -(2^15)
-Decimal = -32768
+16. Binary 1011110100000001 as a signed decimal is: -17151
 
-So, Hex 8000 as a signed decimal is: -32768
+17. If we had 20-bit registers, the smallest signed decimal integer value would be: -524288
 
-10. Decimal 8000 encoded in 16-bits (unsigned) is in hex:
-Decimal 8000 is 0x1F40 in hex when encoded as an unsigned 16-bit number.
+18. If we had 20-bit registers, the largest signed decimal integer value would be: 524287
 
-11. Decimal 8000 encoded in 16-bits (signed) is in hex:
-Decimal 8000 is 0x1F40 in hex when encoded as a signed 16-bit number. The two's complement representation remains the same for positive numbers.
-12. Decimal -11 encoded in 16-bits (signed) is in hex:
-FFF5; 11 in binary is 1011, extend it to 16-bits and invert the bits 0 and 1, after conversion and grouping the 16-bit signed hexadecimal of -11 is 0xFFF5.
-Decimal -32717 encoded in 16-bits (signed) is in hex: FFAB
-13. Binary 10111101 in hex is: BD
-14. Binary 1011110100000001 as an unsigned decimal is: 20,049
-15. Binary 1011110100000001 as a signed decimal is: 16575
-16. If we had 20-bit registers, the smallest signed decimal integer value would be: -2^19
-17. If we had 20-bit registers, the largest signed decimal integer value would be: 2^19-1
-18. The modular sum of 16-bit hex values 3511 + 4FFC is: 850D
-19. The saturated sum of 16-bit hex values 3511 + 4FFC is: 8FFD
-20. The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N): Y, it has a carry
-21. The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N): N
+19. The modular sum of 16-bit hex values 3511 + 4FFC is: 850D
 
+20. The saturated sum of 16-bit hex values 3511 + 4FFC is: 8FFD
 
-1.The modular sum of 16-bit hex values 6159 + F702 is: 24987 (decimal)
-2.	The saturated sum of 16-bit hex values 6159 + F702 is: FFFF(hexadecimal)
-3.	The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N): Y
-4.	The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N): N
-5.The modular sum of 16-bit hex values EEEE + C00C is: 52746 (decimal)
-6.The saturated sum of 16-bit hex values EEEE + C00C is:  2EEFA
-7.	The 16-bit operation 9EEE + AB0C has a carry (Y or N): Y
-8.	The 16-bit operation 9EEE + AB0C has a overflows (Y or N): N, can be represented
-9. The negation of 16-bit word 0xB00F is: 4FF1
-10. The negation of 16-bit word 0x2232 is: DDCE
-11. The negation of 16-bit word 0x8000 is: 8000
-12. The negation of 32-bit word 0xFFF329BA is:000CD646
-13. 96.03125 as a 32-bit float, in hex is: 42C10000
-14. 16777216 as a 32-bit float, in hex is: 4B800000
-15. Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal:240.0
-16. Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal:7.96975
+21. The 16-bit operation 0x3511 + 0x4FFC has a carry (Y or N): Y, it has a carry
 
-1. The largest finite IEEE-754 single precision float, in hex is: 7F800000
-2. The smallest finite IEEE-754 single precision float, in hex is: 0x7E000000
-3. The largest nonzero negative IEEE-754 single precision float, in hex is: 0xFF7FFFFF
-4. The smallest nonezero positive IEEE-754 single precision float, in hex is: a. 00000001
-5.  5.125 X 2^90 as a 32-bit float, in hex is: 40A40000
-6. 2^-138 as a 32-bit float, in hex is: 40000000
-7. 1.5 X 2^143 as a 32-bit float, in hex is: 3FC00000
+22. The 16-bit operation 0x3511 + 0x4FFC has a overflows (Y or N): N
+----------------------------------------------------------------------------
+2. The modular sum of 16-bit hex values 6159 + F702 is: 585B
+
+3. The saturated sum of 16-bit hex values 6159 + F702 is: FFFF 
+
+4. The 16-bit operation 0x6159 + 0xF702 has a carry (Y or N): Y
+
+5. The 16-bit operation 0x6159 + 0xF702 has a overflows (Y or N): N
+
+6. The modular sum of 16-bit hex values EEEE + C00C is: BFFA
+
+7. The saturated sum of 16-bit hex values EEEE + C00C is: 32767
+
+8. The 16-bit operation 9EEE + AB0C has a carry (Y or N): Y
+
+9.  The 16-bit operation 9EEE + AB0C has a overflows (Y or N): N
+
+10. The negation of 16-bit word 0xB00F is: 4FF1
+
+11.The negation of 16-bit word 0x2232 is: DDCE
+
+12.The negation of 16-bit word 0x8000 is: 8000
+
+13.The negation of 32-bit word 0xFFF329BA is:000CD646
+
+14. 96.03125 as a 32-bit float, in hex is: 42C010000
+
+15. -16777216 as a 32-bit float, in hex is: CB800000
+
+16. Hex 43700000, when interpreted as an IEEE-754 pattern, is in decimal: 240.0
+
+17. Hex C0FF0000, when interpreted as an IEEE-754 pattern, is in decimal: -7.96975
+----------------------------------------------------------------------------------
+2. The largest finite IEEE-754 single precision float, in hex is: 0x7F7FFFFF
+3. The smallest finite IEEE-754 single precision float, in hex is: 0xFF7FFFFF
+4. The largest nonzero negative IEEE-754 single precision float, in hex is: 0x00000001
+5. The smallest nonezero positive IEEE-754 single precision float, in hex is: a. 0x00000001
+6. -5.125 X 2^90 as a 32-bit float, in hex is: 0xEDA40000
+7. 2^-138 as a 32-bit float, in hex is: 0x00000800
+8. 1.5 X 2^143 as a 32-bit float, in hex is: 0x00000060
+
+Challenge Problem: 0 ???
 
