@@ -8,23 +8,23 @@ CONVERSIONS
 Problems "C-level"
 =================
    Question 01      1/1 pt.
-   Question 02      0/1 pt.   nope!
-   Question 03      0/1 pt.   nope!
+   Question 02      0/1 pt.   Corrected
+   Question 03      0/1 pt.   Corrected
    Question 04      1/1 pt.
-   Question 05      0/1 pt.   nope!
-   Question 06      0/1 pt.   nope!
+   Question 05      0/1 pt.   Corrected
+   Question 06      0/1 pt.   nope; should be 100
    Question 07      1/1 pt.
    Question 08      1/1 pt.
    Question 09      1/1 pt.
    Question 10      1/1 pt.
    Question 11      1/1 pt.
    Question 12      1/1 pt.
-   Question 13      0/1 pt.   nope!
-   Question 14      0/1 pt.   nope!
+   Question 13      0/1 pt.   Corrected
+   Question 14      0/1 pt.   Corrected
    Question 15      1/1 pt.
    Question 16      1/1 pt.
-   Question 17      0/1 pt.   nope!
-   Question 18      0/1 pt.   nope!
+   Question 17      0/1 pt.   Corrected
+   Question 18      0/1 pt.   Corrected
    Question 19      1/1 pt.
    Question 20      1/1 pt.
    Question 21      1/1 pt.
@@ -34,34 +34,34 @@ Problems "C-level"
 Problems "B-level"
 =================
 [renumber so only the actual questions are numbered]
-   Question  01     0/1 pt.   nope!
+   Question  01     0/1 pt.   Corrected
    Question  02     1/1 pt.
    Question  03     1/1 pt.
    Question  04     1/1 pt.
-   Question  05     0/1 pt.   nope!
-   Question  06     0/1 pt.   nope!
+   Question  05     0/1 pt.   nope; should be 0xAEFA
+   Question  06     0/1 pt.   nope; should be 0xFFFF
    Question  07     1/1 pt.
-   Question  08     0/1 pt.   nope!
+   Question  08     0/1 pt.   nope; should be "Y"
    Question  09     1/1 pt.
    Question  10     1/1 pt.
    Question  11     1/1 pt.
    Question  12     1/1 pt.
-   Question  13     0/1 pt.   nope!
-   Question  14     0/1 pt.   nope!
+   Question  13     0/1 pt.   Corrected
+   Question  14     0/1 pt.   Corrected
    Question  15     1/1 pt.
-   Question  16     0/1 pt.   nope!
+   Question  16     0/1 pt.   Corrected
 
 
 Problems "A-level"
 =================
 [renumber so only the actual questions are numbered]
-   Question  01     0/1 pt.   nope!
-   Question  02     0/1 pt.   nope!
-   Question  03     0/1 pt.   nope!
+   Question  01     0/1 pt.   Corrected
+   Question  02     0/1 pt.   Corrected
+   Question  03     0/1 pt.   nope; should be 0x8000 0001
    Question  04     1/1 pt.
-   Question  05     0/1 pt.   nope!
-   Question  06     0/1 pt.   nope!
-   Question  07     0/1 pt.   nope!
+   Question  05     0/1 pt.   Corrected
+   Question  06     0/1 pt.   Corrected
+   Question  07     0/1 pt.   Corrected
    Question  08   for fun only!
 
 Total possible points 45
@@ -126,4 +126,13 @@ for the assignment.
 Make your corrections and re-submit to your repo by Thursday, September 28th.
 You'll get full credit for the highest section's value that has 100% correct
 answers.
+
+========================================================
+FINAL PASS OUTCOME:
+
+Combining all levels into one assignment.
+
+Total of 45 problems.
+
+You earned 40/45 which is 88.89% which is a B-plus.
 
