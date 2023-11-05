@@ -1,0 +1,95 @@
+.
+"running tests on dec2bin"
+Enter a base-10 number: a
+00000000000000000000000000001000
+00000000000000000000000000000101
+00000000000000011110001001000000
+00000000000000001111111111111111
+00111010010000000000000000000000
+01000000000000000001001000110100
+.
+"running tests on dec2hex"
+Usage: dec2hex <number> <bits>
+Enter a base-10 number:
+These are invalid bits. Please choose 32 or 64.
+0x0001E240
+Enter a base-10 number:
+These are invalid bits. Please choose 32 or 64.
+0x3A400000
+Enter a base-10 number:
+These are invalid bits. Please choose 32 or 64.
+0x0000000000000005
+0x000000000001E240
+These are invalid bits. Please choose 32 or 64.
+0x000000003A400000
+Enter a base-10 number:
+These are invalid bits. Please choose 32 or 64.
+.
+"running tests on timesTables"
+Enter a number:  [I entered an 'a']
+13315020 * 2 = 26630040
+13315020 * 3 = 39945060
+13315020 * 4 = 53260080
+13315020 * 5 = 66575100
+13315020 * 6 = 79890120
+13315020 * 7 = 93205140
+13315020 * 8 = 106520160
+13315020 * 9 = 119835180
+13315020 * 10 = 133150200
+13315020 * 11 = 146465220
+13315020 * 12 = 159780240
+13315020 * 13 = 173095260
+13315020 * 14 = 186410280
+      .
+      .
+[endless loop aborted and output elided]
+      .
+      .
+Enter a number:2 * 2 = 4
+Enter a number:5 * 2 = 10
+5 * 3 = 15
+5 * 4 = 20
+5 * 5 = 25
+Enter a number:10 * 2 = 20
+10 * 3 = 30
+10 * 4 = 40
+10 * 5 = 50
+10 * 6 = 60
+10 * 7 = 70
+10 * 8 = 80
+10 * 9 = 90
+10 * 10 = 100
+Enter a number:12 * 2 = 24
+12 * 3 = 36
+12 * 4 = 48
+12 * 5 = 60
+12 * 6 = 72
+12 * 7 = 84
+12 * 8 = 96
+12 * 9 = 108
+12 * 10 = 120
+12 * 11 = 132
+12 * 12 = 144
+Enter a number:13 * 2 = 26
+13 * 3 = 39
+13 * 4 = 52
+13 * 5 = 65
+13 * 6 = 78
+13 * 7 = 91
+13 * 8 = 104
+13 * 9 = 117
+13 * 10 = 130
+13 * 11 = 143
+13 * 12 = 156
+13 * 13 = 169
+.
+"running test on holdit"
+This program will time how long you can hold your breath. Take a deep breath, then press the 'Enter' key. When you absolutely have to exhale, press the 'Enter' key again. The duration will be displayed in minutes and seconds.
+Timer started. Press 'Enter' to stop...You held your breath for 4 minutes and 12 seconds. Good job!.
+.
+"running test on wordcount"
+What is your file source path:
+Unable to open file.
+Please check if file exists.
+What is your file source path:
+Total words = 396
