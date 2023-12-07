@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int swapEndian(int n) {
   return (((n >> 24) & 0x000000ff) 
         | ((n >>  8) & 0x0000ff00) 
