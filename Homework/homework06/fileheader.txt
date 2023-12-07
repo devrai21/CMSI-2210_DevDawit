@@ -1,0 +1,19 @@
+FOR NASM FILES: 
+(1) nasm -f macho64 -o makeNBO.o makeNBO.nasm
+(2) gcc -m64 -o testNBO makeNBOtest.c makeNBO.o
+(3) ./testNBO
+
+WHICHENDISUP.c
+(1) gcc -o whichEndisUp whichEndisUp.c
+(2) ./whichEndisUp
+
+MAKENBOC.c
+(1) gcc makeNBOC.c -o makeNBOC
+(2)./makeNBOC
+
+MAKENBOTEST.c
+(1) gcc -c makeNBOC.c -o makeNBOC.o
+(2) gcc -c makeNBOtest.c -o makeNBOtest.o
+(3) gcc makeNBOC.o makeNBOtest.o -o makeNBOtest
+(4) ./makeNBOtest
+
