@@ -1,7 +1,7 @@
 section .text
-global findGCD
+global _findGCD
 
-findGCD:
+_findGCD:
     push rbx        
 
     mov rax, rdi    

@@ -1,0 +1,88 @@
+
+
+Evaluation Criteria ~ homework06
+CMSI 2210 Section all Fall 2023
+=================================
+
+FINDGCD.NASM
+   nasm file assembles  [4 pts.]
+   nasm runs            [5 pts.]
+   output correct       [1 pts.]
+GCDFINDER
+   nasm file assembles  [4 pts.]
+   gcdFinder.c compiles [4 pts.]
+   link both files OK   [5 pts.]
+   nasm returns value   [5 pts.]
+   output correct       [3 pts.]
+PARITYGEN
+   nasm file assembles  [5 pts.]
+   nasm runs            [0 pts.]
+   output correct       [2 pts.]
+WHICHENDISUP
+   compiles no errors   [5 pts.]
+   runs no errors       [5 pts.]
+MAKENBOC.C
+   compiles no errors   [5 pts.]
+   uses previous func.  [5 pts.]
+   tester compiles      [5 pts.]
+   tester runs          [5 pts.]
+   output correct       [3 pts.]
+MAKENBO.NASM
+   nasm file assembles  [5 pts.]
+   link all files OK    [5 pts.]
+   calls "C" function   [5 pts.]
+   output correct       [3 pts.]
+
+Total possible points 100
+
+========================================================
+
+TOTAL EARNED POINTS:
+   you earned 89.00/100.00 which is 89% which is a B-plus
+
+========================================================
+SPECIFIC COMMENTS/FEEDBACK:
+
+problem 1 findGCD.nasm: got an assembly error that macho 64-bit format
+   doesn't support 32-bit addresses.  The 'default rel' at the start of the
+   file should fix that.  Now it assembles and links but I get a seg fault
+   when running it.
+
+problem 2 findGCDfunc.nasm & gcdFinder.c: assembles and compiles, but linker
+   warns of "implicit conversion from 'long' to 'int'" which prevents making
+   the output file.  I changed your "C" code to have 'long' variables where
+   appropriate, as well as the printf specifications.  Finally, you need to
+   have underscores in front of the function name for proper munging of the
+   "C" function code.  I fixed that for you.  Now it links and runs fine.
+
+problem 3 started out with a nasm error saying 'instruction expected' at line
+   one.  That's because you didn't put the semicolon in front of the citation
+   on line one.  :)  I fixed that for you, no charge.  Now it assembles.
+   However, there's no main program for this, it looks like a function, so I
+   can't link it up and run it since there's no '_main' entry point.  Rats.
+   It looks like the output WOULD be correct, so partial points there.
+
+problems 4 and 5 work perfectly.  Nice job!
+
+problem 6 didn't link.  Looking back at the code, I see your "makeNBOtest.c"
+   program is actually the function, and your "makeNBOC.c" file is what you
+   used for the main program.  While this is TOTALLY backwards to what was
+   asked, it can still work based on the linking order.  Once I changed the
+   order and file names of what I linked for your program, it worked fine.
+
+========================================================
+SEMESTER HOMEWORK TOTALS:
+
+   homework01 ~ 100.00% of  5 points =  5.00 points
+   homework02 ~ 100.00% of  5 points =  5.00 points
+   homework03 ~  88.89% of  5 points =  4.45 points
+   homework04 ~  84.44% of  5 points =  4.22 points
+   homework05 ~  93.00% of 10 points =  9.30 points
+   homework06 ~  89.00% of 15 points = 13.35 points
+                       semester total: 41.33 out of 45.00 = 91.84%
+                             which is an A-minus
+
+Great work on this assignment.  You two have worked pretty well on this material
+and seem to have a respectable grasp of it.  I look forward to having you in my
+future classes!  Have a wonderful holiday.
+

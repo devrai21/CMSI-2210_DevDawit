@@ -1,4 +1,4 @@
-Help from StackOverflow and Youtube 
+;Help from StackOverflow and Youtube
 
 global    _main
 default   rel
